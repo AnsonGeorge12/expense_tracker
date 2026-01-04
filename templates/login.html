@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head><title>Login - Expense Tracker</title></head>
+<body style="text-align:center; font-family: Arial; padding-top: 50px; background-color: #f4f4f9;">
+    
+    <div style="display:inline-block; background: white; border:1px solid #ddd; padding:30px; border-radius:12px; width: 300px; box-shadow: 0px 4px 10px rgba(0,0,0,0.1);">
+        <h2 style="margin-top: 0;">💰 Login</h2>
+        
+        <form action="/login" method="POST">
+            <input type="text" name="username" placeholder="Username" required style="width:90%; padding:10px; margin-bottom:10px; border:1px solid #ccc; border-radius:5px;"><br>
+            <input type="password" name="password" placeholder="Password" required style="width:90%; padding:10px; margin-bottom:20px; border:1px solid #ccc; border-radius:5px;"><br>
+            <button type="submit" style="width:97%; padding:10px; background-color: #007BFF; color:white; border:none; border-radius:5px; cursor:pointer; font-weight:bold;">Login</button>
+        </form>
+
+        <hr style="margin: 25px 0; border: 0; border-top: 1px solid #eee;">
+
+        <h4 style="margin-bottom: 10px; color: #555;">New User?</h4>
+        <form action="/register" method="POST">
+            <input type="text" name="username" placeholder="New Username" required style="width:90%; padding:8px; margin-bottom:8px; border:1px solid #eee; border-radius:5px;"><br>
+            <input type="password" name="password" placeholder="New Password" required style="width:90%; padding:8px; margin-bottom:10px; border:1px solid #eee; border-radius:5px;"><br>
+            <button type="submit" style="width:97%; padding:8px; background-color: #28a745; color:white; border:none; border-radius:5px; cursor:pointer; font-size: 14px;">Create Account</button>
+        </form>
+    </div>
+
+</body>
+</html>
